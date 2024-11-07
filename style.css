@@ -50,7 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Align items to the left */
   padding: 20px;
   background-color: var(--ctp-mocha-base);
 }
@@ -58,14 +58,17 @@ body {
 .placeholder-text {
   margin-bottom: 20px;
   font-size: 1.2em;
-  text-align: center;
+  text-align: left;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 400px;
+  width: 100%; /* Span the whole right section */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
 .form-row {
@@ -87,6 +90,7 @@ form {
 label {
   margin-bottom: 5px;
   font-weight: bold;
+  color: var(--ctp-mocha-green);
 }
 
 input {
@@ -98,12 +102,17 @@ input {
 button {
   padding: 10px;
   font-size: 1em;
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--ctp-mocha-green);
+  color: var(--ctp-mocha-crust);
   border: none;
   cursor: pointer;
+  width: 30%;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: var(--ctp-mocha-blue);
 }
