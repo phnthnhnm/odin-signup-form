@@ -139,9 +139,24 @@ a:hover {
 .error-message {
   color: var(--ctp-mocha-red);
   font-size: 0.9em;
+  margin-top: 0px; /* Move the error message a few pixels down */
   margin-bottom: 10px;
 }
 
 input.invalid {
   border-color: var(--ctp-mocha-red);
+}
+
+.credits {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--ctp-mocha-text);
+  font-size: 0.9em;
+}
+
+.credits a {
+  color: var(--ctp-mocha-green);
+  text-decoration: underline;
 }
