@@ -103,7 +103,7 @@ input {
 input:focus {
   border-color: var(--ctp-mocha-blue);
   outline: none;
-  border-width: 2px;
+  box-shadow: 0 0 5px var(--ctp-mocha-blue);
 }
 
 button {
@@ -139,7 +139,7 @@ a:hover {
 .error-message {
   color: var(--ctp-mocha-red);
   font-size: 0.9em;
-  margin-top: 0px; /* Move the error message a few pixels down */
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
