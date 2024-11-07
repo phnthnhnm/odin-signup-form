@@ -10,6 +10,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
+  color: var(--ctp-mocha-text);
 }
 
 .left-section {
@@ -20,11 +21,28 @@ body {
   position: relative;
 }
 
-.logo {
+.logo-container {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.logo {
   width: 100px;
+  margin-right: 10px;
+}
+
+.website-name {
+  font-family: 'monaspace-neon', Arial, sans-serif;
+  font-size: 2em;
+  color: white;
 }
 
 .right-section {
@@ -34,6 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-color: var(--ctp-mocha-base);
 }
 
 .placeholder-text {
